@@ -1,0 +1,36 @@
+/* General styles for the Logo component */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px;
+    background-color: #000; /* Background for the entire section */
+  }
+  
+  svg {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the text content below the SVG */
+  .logo-content {
+    text-align: center;
+    color: white; /* Ensure text is visible on a dark background */
+    margin-top: 20px;
+  }
+  
+  .logo-content h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .logo-content h2 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .logo-content p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }

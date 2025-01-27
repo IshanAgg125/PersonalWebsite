@@ -1,0 +1,66 @@
+/* General styling */
+nav {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* space between the logo and nav links */
+    align-items: center; /* vertically centering the items */
+    padding: 1rem 2rem; /* Adding space inside the navbar */
+    background-color: #ffffff; /* navy blue background for the navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for the depth */
+
+
+}
+
+.logo {
+    display: flex; /* Aligns the logo image and text horizontally */
+    align-items: center; /* Centers the items vertically */
+}
+
+.logo img {
+    width: 50px; /* Setting a fixed width for the logo image*/
+    height: auto; /* Maintaining aspect ratio for the logo image */
+    margin-right: 1rem; /* Adding space between the logo image and the text */
+
+}
+
+.logo h1 {
+    color: white; /* Makes the text color white*/
+    font-size: 1.5rem; /* Increasing the font size for the logo text */
+    font-weight: bold; /* Making the text bold */
+    margin: 0; /* Removing the default margin around the heading */
+
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex; /* Aligns the links horizontally */
+    list-style-type: none; /* Removes the default bullet points */
+    margin: 0; /* Removes the default margin around the list */
+    padding: 0; /* Removes the default padding around the list */
+    gap: 1.5rem; /* Adding space between the links */
+}
+
+/* Individual link styling */
+.nav-links a {
+    text-decoration: none; /* Removes the default underline from the links */
+    color: rgb(0, 0, 0); /* Makes the text color white */
+    font-size: 1rem; /* Increasing the font size for the navigation links */
+    font-weight: 500; /* Making the text slightly bold */
+    transition: color 0.3s ease; /* Adds a smooth transition effect for the color */
+
+}
+
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: #0026ff; /* Changing the color to yellow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hiding the navigation links on smaller screens */
+    }
+    .hamburger-menu {
+        display: block; /* Showing the hamburger menu on smaller screens */
+    }
+}

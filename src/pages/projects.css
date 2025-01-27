@@ -1,0 +1,86 @@
+.projects {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    gap: 70px; /* Add space between project containers */
+    padding: 20px; /* Add padding around the container */
+}
+
+.project-container {
+    position: relative; /* Enable positioning for overlay */
+    margin: 0 auto; /* Center the container horizontally */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth scaling and opacity transitions */
+    transform: scale(0.9); /* Default smaller scale for inactive projects */
+    opacity: 0.8; /* Slightly faded appearance for inactive projects */
+}
+
+.project-container img {
+    width: auto; /* Maintain the original width of the image */
+    height: auto; /* Maintain the original height of the image */
+    max-width: 100%; /* Prevent image from overflowing the container */
+    display: block; /* Remove inline spacing below the image */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.project-container.active {
+    transform: scale(1); /* Scale to full size when active */
+    opacity: 1; /* Fully visible when active */
+}
+
+.project-overlay {
+    position: absolute; /* Overlay positioned over the image */
+    bottom: 0; /* Start from the bottom */
+    left: 10; /* Align to the left */
+    width: 100%; /* Match the image width */
+    height: 100%; /* Match the image height */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-end; /* Align items at the bottom */
+    color: rgb(255, 255, 255); /* White text color */
+    padding: 20px; /* Add padding inside the overlay */
+    border-radius: 10px; /* Match the image's rounded corners */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.project-container:hover .project-overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.project-title {
+    font-size: 40px; /* Text size for the title */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.tech-used {
+    font-size: 40px; /* Text size for the title */
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 20px; /* Text size for the description */
+    font-weight: bold; /* Bold text for emphasis */
+    margin: 10px 0; /* Space above and below the description */
+}
+
+.project-technologies {
+    font-size: 22px; /* Text size for the technologies */
+    margin-bottom: 10px; /* Space below the technologies */
+    display: block; /* Display as a block to stack items vertically */
+    gap: 5px; /* Remove this as it's not needed for block layout */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding for lists */
+    margin: 0; /* Remove default margin for lists */
+}
+
+.project-container {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Neon blue glow around the container */
+    border: 2px solid rgba(0, 255, 255, 0.3); /* Subtle neon border */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.project-container:hover {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 1); /* Stronger glow on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+.project-overlay {
+    text-shadow: 0 0 5px cyan, 0 0 10px cyan; /* Neon glow on text */
+}
