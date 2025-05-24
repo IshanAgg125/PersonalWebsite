@@ -6,7 +6,7 @@ import "./projects.css"
 function Projects() {
 
     const projectRefs = useRef([]); // create a ref to store references to each project container
-
+    
     // Function to handle scroll events
     const handleScroll = () => {
         // Looping through each project container reference

@@ -57,14 +57,14 @@ const Logo = ({ children }) => {
           cx="180"
           cy="100"
           r="6"
-          fill="blue"
+          fill="lightgreen"
         >
           <animateTransform
             attributeName="transform"
             attributeType="XML"
             type="rotate"
-            from="0 100 100"
-            to="360 100 100"
+            from="200 100 100"
+            to="360 200 200"
             dur="5s"
             repeatCount="indefinite"
           />
